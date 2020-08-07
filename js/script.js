@@ -23,12 +23,15 @@ function() {
   else if (eta == "minorenne") {
     var ticketPrice = ticket - (ticket / 5);
     document.getElementById("offerta").innerHTML = "Offerta Junior";
+    document.getElementById("biglietto").classList.add("show");
   } else if (eta == "over65") {
     var ticketPrice = ticket - ((ticket / 5) * 2);
     document.getElementById("offerta").innerHTML = "Offerta Silver";
+    document.getElementById("biglietto").classList.add("show");
   } else {
     var ticketPrice = ticket;
     document.getElementById("offerta").innerHTML = "Biglietto Standard";
+    document.getElementById("biglietto").classList.add("show");
   }
   console.log(ticketPrice);
 
@@ -39,7 +42,6 @@ function() {
   console.log(codice);
 
   // Stampare il Biglietto
-  document.getElementById("biglietto").classList.add("show");
   document.getElementById("nome-passeggero").innerHTML = nome;
   document.getElementById("carrozza").innerHTML = carrozza;
   document.getElementById("codice").innerHTML = codice;
