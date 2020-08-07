@@ -17,7 +17,10 @@ function() {
   /*  Se eta == minorenne sconto 20%
       Se eta == over65 sconto 40%
   */
-  if (eta == "minorenne") {
+  if (!isNaN(nome) || km < 0) {
+    alert("Errore: inserisci Nome o Km>0")
+  }
+  else if (eta == "minorenne") {
     var ticketPrice = ticket - (ticket / 5);
     document.getElementById("offerta").innerHTML = "Offerta Junior";
   } else if (eta == "over65") {
