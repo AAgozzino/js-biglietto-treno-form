@@ -10,23 +10,53 @@
   </head>
   <body>
     <!-- Page wrapper -->
+    <div class="page-wrapper">
       <!-- Section - calcolo biglietto -->
+      <section class="form">
         <!-- Titolo section -->
+        <h1 class="form-title">Calcola il prezzo del tuo biglietto</h1>
         <!-- /Titolo section -->
 
         <!-- Form container -->
+        <div class="form-container">
           <!-- Form input -->
+          <div class="row">
             <!-- Input - Nome e cognome -->
+            <div class="form-input">
+              <label for="nome">Nome Cognome</label>
+              <input id="nome" type="text" placeholder="Nome e cognome" >
+            </div>
             <!-- /Input - Nome e cognome -->
 
             <!-- Input - Km -->
+            <div class="form-input">
+              <label for="km">KM da percorrere</label>
+              <input id="km" type="number" min="1" placeholder="Inserisci i Km">
+            </div>
             <!-- /Input - Km -->
 
             <!-- Input - Fascia età -->
+            <div class="form-input">
+              <label for="fascia-eta">Fascia d'et&agrave;</label>
+              <select name="fascia-eta" id="fascia-eta">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over65</option>
+              </select>
+            </div>
             <!-- /Input - Fascia età -->
+          </div>
 
+          <!-- Buttons -->
+          <div class="row">
+            <button class="btn">Genera</button>
+            <button class="btn">Annulla</button>
+          </div>
+          <!-- /Buttons -->
           <!-- /Form input -->
+        </div>
         <!-- /Form container -->
+      </section>
       <!-- /Section - calcolo biglietto -->
 
       <!-- Section - Biglietto -->
@@ -49,6 +79,7 @@
           <!-- /Tabella - dati biglietto -->
         <!-- /Biglietto container -->
       <!-- /Section - Biglietto -->
+    </div>
     <!-- /Page wrapper -->
 
     <script src="js/script.js" charset="utf-8"></script>
