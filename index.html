@@ -20,7 +20,7 @@
         <!-- Form container -->
         <div class="form-container">
           <!-- Form input -->
-          <div class="row">
+          <div class="row-form">
             <!-- Input - Nome e cognome -->
             <div class="form-input">
               <label for="nome">Nome Cognome</label>
@@ -48,7 +48,7 @@
           </div>
 
           <!-- Buttons -->
-          <div class="row">
+          <div class="row-btn">
             <button class="btn">Genera</button>
             <button class="btn">Annulla</button>
           </div>
@@ -59,26 +59,51 @@
       </section>
       <!-- /Section - calcolo biglietto -->
 
-      <!-- Section - Biglietto -->
+      <!-- Section - Ticket -->
+      <section class="ticket">
         <!-- Titolo section -->
+        <h2 class="ticket-title">Il tuo biglietto</h2>
         <!-- /Titolo section -->
 
-        <!-- Biglietto container -->
+        <!-- Ticket container -->
+        <div class="ticket-container">
           <!-- Titolo container -->
+          <h3>Dettaglio passeggeri</h3>
           <!-- /Titolo container -->
+          <div class="row-ticket">
+            <!-- Box - Nome passeggero -->
+            <div class="box-passeggero">
+              <h3>Nome passeggero</h3>
+              <h4 id="nome-passeggero">Nome</h4>
+            </div>
+            <!-- /Box - Nome passeggero -->
 
-          <!-- Box - Nome passeggero -->
-          <!-- /Box - Nome passeggero -->
+            <!-- Tabella - dati biglietto -->
+            <table class="ticket-table">
+              <!-- table head -->
+              <thead>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </thead>
+              <!-- /table head -->
 
-          <!-- Tabella - dati biglietto -->
-            <!-- table head -->
-            <!-- /table head -->
-
-            <!-- table body -->
-            <!-- /table body -->
-          <!-- /Tabella - dati biglietto -->
-        <!-- /Biglietto container -->
-      <!-- /Section - Biglietto -->
+              <!-- table body -->
+              <tbody>
+                <td id="offerta">offerta</td>
+                <td id="carrozza">9</td>
+                <td id="codice">90000</td>
+                <td id="costo">2.1€</td>
+              </tbody>
+              <!-- /table body -->
+            </table>
+            <!-- /Tabella - dati biglietto -->
+          </div>
+        </div>
+        <!-- /Ticket container -->
+      </section>
+      <!-- /Section - Ticket -->
     </div>
     <!-- /Page wrapper -->
 
