@@ -26,19 +26,6 @@ body{
   background-color: #B92E51;
 }
 
-label{
-  text-align: center;
-  color: #B92E51;
-  margin-bottom: 15px;
-}
-
-input, select{
-  border: 1px solid #B92E51;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 16px;
-}
-
 .page-wrapper{
   width: 1170px;
   margin: auto;
@@ -52,25 +39,44 @@ input, select{
   padding: 20px;
 }
 
-.ticket-container{
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-}
-
-.row-form, .row-btn{
+.row{
   display: flex;
   justify-content: center;
 }
 
-.row-ticket{
-  display: flex;
-}
-
+/* Form input */
 .form-input{
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+}
+
+label{
+  text-align: center;
+  color: #B92E51;
+  margin-bottom: 15px;
+}
+
+input, select{
+  border: 1px solid #B92E51;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+input:focus, select:focus{
+  background-color: #B92E51;
+  color: #fff;
+}
+
+input:focus::placeholder{
+  color: #fff;
 }
 
 .btn{
@@ -85,22 +91,35 @@ input, select{
   font-weight: bold;
 }
 
+.btn:hover{
+  color: #fff;
+  background-color: #808080;
+  cursor: pointer;
+}
+
+/* Ticket */
+.ticket-container{
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.row-ticket{
+  display: flex;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
 .box-passeggero{
-  flex-shrink: 0;
-  height: 200px;
   background-color: #808080;
   padding: 20px;
 }
 
-.ticket-container{
-  display: none;
-}
-
-.ticket-table{
-  width: 100%;
-  height: 200px;
-  border-top: 1px solid #808080;
-  border-bottom: 1px solid #808080;
+th, td{
+  text-align: left;
+  font-size: 16px;
+  padding: 20px;
 }
 
 .show{
