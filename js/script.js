@@ -18,7 +18,7 @@ function() {
       Se eta == over65 sconto 40%
   */
   if (!isNaN(nome) || km < 0) {
-    alert("Errore: inserisci Nome o Km>0")
+    alert("Errore: inserisci Nome o Km>0");
   }
   else if (eta == "minorenne") {
     var ticketPrice = ticket - (ticket / 5);
@@ -37,7 +37,7 @@ function() {
 
   // Generare il numero della carrozza e il codice CP
   var carrozza = Math.floor(Math.random() * 9) + 1;
-  var codice = Math.floor(Math.random() * 9999) + 90000;
+  var codice = Math.floor(Math.random() * 10000) + 90000;
   console.log(carrozza);
   console.log(codice);
 
@@ -60,4 +60,4 @@ function() {
   document.getElementById("fascia-eta").value = "";
   document.getElementById("biglietto").classList.remove("show");
 }
-)
+);
